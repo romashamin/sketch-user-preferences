@@ -1,0 +1,33 @@
+{
+  "name": "User Preferences",
+  "description": "Setup user preferences",
+  "author": "Roman Shamin",
+  "homepage": "https://github.com/romashamin/sketch-user-preferences",
+  "version": 1.0,
+  "identifier": "com.github.romashamin.sketch-user-preferences",
+  "appcast": "https://raw.githubusercontent.com/romashamin/sketch-user-preferences/master/appcast.xml",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name"       : "Say hello",
+      "identifier" : "run",
+      "shortcut"   : "cmd alt ctrl h",
+      "script"     : "User Preferences.js",
+      "handler"    : "onRun"
+    },
+    {
+      "name"       : "Preferences...",
+      "identifier" : "prefs",
+      "shortcut"   : "cmd ctrl g",
+      "script"     : "User Preferences.js",
+      "handler"    : "getPreferencesFromUser"
+    }
+  ],
+  "menu": {
+    "items": [
+      "run",
+      "prefs"
+    ]
+  }
+}
